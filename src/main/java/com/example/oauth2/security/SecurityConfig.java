@@ -60,11 +60,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 
-        registrations.add(CustomOAuth2Provider.KAKAO.getBuilder("kakao")
-                    .clientId(kakaoClientId)
-                    .clientSecret(kakaoClientSecret)
-                    .jwkSetUri("temp")
-                    .build());
+//        registrations.add(CustomOAuth2Provider.KAKAO.getBuilder("kakao")
+//                    .clientId(kakaoClientId)
+//                    .clientSecret(kakaoClientSecret)
+//                    .jwkSetUri("temp")
+//                    .build());
 
         registrations.add(CustomOAuth2Provider.NAVER.getBuilder("naver")
                 .clientId(naverClientId)
